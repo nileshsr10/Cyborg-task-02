@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+        h1 {
             text-align: center;
         }
-        .sort{
+
+        .sort {
             margin: 0px 10px;
         }
+
         #container {
             display: flex;
             justify-content: center;
@@ -54,6 +56,7 @@
             background-color: rgb(180, 121, 11);
             /* color: black; */
         }
+
         .listgrp3 {
             height: 30px;
             margin: 0;
@@ -64,6 +67,7 @@
             background-color: rgba(20, 229, 170, 0.668);
             /* color: black; */
         }
+
         .listgrp4 {
             height: 30px;
             margin: 0;
@@ -74,39 +78,77 @@
             background-color: rgba(152, 89, 150, 0.243);
             /* color: black; */
         }
+
+        footer {
+            /* white-space: pre; */
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            font-size: 25px;
+
+
+            /* border: 2px solid red; */
+        }
+
+        #quote {
+            padding: 34px;
+            width: 800px;
+            /* height: 200px; */
+            text-align: center;
+            vertical-align: middle;
+
+
+            border: 2px solid black;
+        }
+
+        #new-quotes {
+            position: relative;
+            top: -10px;
+            left: 40%;
+            padding: 10px;
+            cursor: pointer;
+            /* background-color: black;
+            color: white; */
+        }
     </style>
 </head>
 
 <body>
     <h1>Our To-do List</h1>
     <div id="container">
-        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-1" placeholder="urgent"> <button class="btn"
-                id="addBtn1">Add-1</button>
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-1" placeholder="urgent"> <button
+                class="btn" id="addBtn1">Add-1</button>
             <div class="to-dos" id="Todo-list1">
             </div>
-        </div> 
+        </div>
 
-        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-2" placeholder="Important"> <button class="btn"
-                id="addBtn2">Add-2</button>
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-2" placeholder="Important"> <button
+                class="btn" id="addBtn2">Add-2</button>
             <div class="to-dos" id="Todo-list2">
             </div>
         </div>
-        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-3" placeholder="Not-urgent"> <button class="btn"
-                id="addBtn3">Add-3</button>
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-3" placeholder="Not-urgent"> <button
+                class="btn" id="addBtn3">Add-3</button>
             <div class="to-dos" id="Todo-list3">
             </div>
         </div>
-        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-4" placeholder="Not-Imp"> <button class="btn"
-                id="addBtn4">Add-4</button>
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-4" placeholder="Not-Imp"> <button
+                class="btn" id="addBtn4">Add-4</button>
             <div class="to-dos" id="Todo-list4">
             </div>
         </div>
-   
-
-
-
-
     </div>
+
+
+
+    <footer>
+        <div id="box">
+            <p id="quote">"Quote is here"
+            </p>
+        </div>
+        <button id="new-quotes">New Quotes</button>
+    </footer>
+
     <script src="./script.js"></script>
 </body>
 
