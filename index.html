@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .sort{
+            margin: 0px 10px;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            /* position: absolute;
+            left: 30%;
+            top: 5%; */
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+
+        .btn {
+            height: 20px;
+            /* font: 30px; */
+            outline: none;
+            /* border: 1px solid black; */
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .listgrp1 {
+            height: 30px;
+            margin: 0;
+            font-size: 20px;
+            cursor: pointer;
+            list-style: disc;
+            padding: 4px 0px;
+            background-color: rgb(239, 16, 16);
+            color: white;
+        }
+
+        .listgrp2 {
+            height: 30px;
+            margin: 0;
+            font-size: 20px;
+            cursor: pointer;
+            list-style: disc;
+            padding: 4px 0px;
+            background-color: rgb(180, 121, 11);
+            /* color: black; */
+        }
+        .listgrp3 {
+            height: 30px;
+            margin: 0;
+            font-size: 20px;
+            cursor: pointer;
+            list-style: disc;
+            padding: 4px 0px;
+            background-color: rgba(20, 229, 170, 0.668);
+            /* color: black; */
+        }
+        .listgrp4 {
+            height: 30px;
+            margin: 0;
+            font-size: 20px;
+            cursor: pointer;
+            list-style: disc;
+            padding: 4px 0px;
+            background-color: rgba(152, 89, 150, 0.243);
+            /* color: black; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our To-do List</h1>
+    <div id="container">
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-1" placeholder="urgent"> <button class="btn"
+                id="addBtn1">Add-1</button>
+            <div class="to-dos" id="Todo-list1">
+            </div>
+        </div> 
+
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-2" placeholder="Important"> <button class="btn"
+                id="addBtn2">Add-2</button>
+            <div class="to-dos" id="Todo-list2">
+            </div>
+        </div>
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-3" placeholder="Not-urgent"> <button class="btn"
+                id="addBtn3">Add-3</button>
+            <div class="to-dos" id="Todo-list3">
+            </div>
+        </div>
+        <div class="sort"> <input type="textarea" class="imputfeild" id="inputfeild-4" placeholder="Not-Imp"> <button class="btn"
+                id="addBtn4">Add-4</button>
+            <div class="to-dos" id="Todo-list4">
+            </div>
+        </div>
+   
+
+
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
